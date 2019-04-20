@@ -1,8 +1,9 @@
-package com.wojciechwaldon.commons;
+package com.wojciechwaldon.commons.json;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.wojciechwaldon.commons.Converter;
 
-public class JsonConverter implements Converter<Object, String> {
+public class ObjectToJsonConverter implements Converter<Object, String> {
 
     public String convert(Object object) {
         try {
